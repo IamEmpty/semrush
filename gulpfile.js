@@ -9,10 +9,10 @@ var paths = {
     'blocks/**/*.jade',
     'pages/*.jade'
   ],
-  stylus: 'stylesheets/main.styl',
-  stylusWatch: [
-    'blocks/**/*.styl',
-    'stylesheets/main.styl'
+  less: 'stylesheets/main.less',
+  lessWatch: [
+    'blocks/**/*.less',
+    'stylesheets/main.less'
   ],
   images: 'img/**/*.{png,jpg}',
   css: 'bower_components/normalize.css/normalize.css',
@@ -21,9 +21,9 @@ var paths = {
 
 // Get one .styl file and render
 gulp.task('css', function() {
-  return gulp.src(paths.stylus)
+  return gulp.src(paths.less)
     .pipe(plumber())
-    .pipe(stylus())
+    .pipe(less())
     .pipe(gulp.dest(paths.build + '/css'));
 });
 
@@ -50,7 +50,7 @@ gulp.task('copy-css', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-  gulp.watch(paths.stylusWatch, ['css']);
+  gulp.watch(paths.lessWatch, ['css']);
   gulp.watch(paths.jadeWatch, ['html']);
 });
 
