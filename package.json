@@ -1,0 +1,27 @@
+{
+  "name": "semrush",
+  "version": "0.0.1",
+  "description": "Test blog",
+  "main": "README.md",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamEmpty/semrush.git"
+  },
+  "author": "IamEmpty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IamEmpty/semrush/issues"
+  },
+  "homepage": "https://github.com/IamEmpty/semrush#readme",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.3",
+    "jade": "^1.11.0",
+    "less": "^2.5.3"
+  }
+}
