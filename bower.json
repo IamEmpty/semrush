@@ -1,0 +1,22 @@
+{
+  "name": "semrush",
+  "description": "Test blog",
+  "main": "README.md",
+  "authors": [
+    "IamEmpty"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IamEmpty/semrush",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
