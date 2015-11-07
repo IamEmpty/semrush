@@ -4,3 +4,37 @@
   padding: 0 15px;
   box-sizing: border-box;
 }
+
+.grid__row(@indent) {
+  margin: 0 @indent;
+  &:after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+}
+
+
+.generate-columns(@indent, @amount, @prefix, @i: 1) when (@i =< @amount) {
+  .@{prefix}-@{i} {
+      width: (100% / @amount * @i);
+      padding: 0 @indent;
+      float: left;
+      box-sizing: border-box;
+      min-height: 1px;
+      position: relative;
+  }
+  .generate-columns(@indent, @amount, @prefix, (@i + 1));
+}
+
+
+.row {
+  .grid__row(-15px);
+}
+
+.row_inner {
+  .grid__row(0);
+}
+
+// 12 column grid system
+.generate-columns(15px, 3, easy-grid);

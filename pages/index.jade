@@ -15,6 +15,21 @@ html
           img.user-photo(src= 'img/profile-image.jpg', alt= 'User photo')
           button.button.button_primary Follow author
       section.latest-articles
+        .container
+          h3.latest-articles__heading My latest articles
+          .row
+            .easy-grid-1
+              .latest-articles__item.article
+                img.article__image(src= 'img/laptop.jpg', alt= 'Laptop')
+                .article__info
+                  h4.article__heading The mystery of PPC, CTR and quality score
+                  time.article__time(datetime= '2015-07-07') July 7, 2015
+                  .article__category Paid search
+                  .article__views 658
+                  .article__rating 4.1
+                  .article__share 256
+            .easy-grid-1
+            .easy-grid-1
       section.subscribe
         .container
           h3.subscribe__heading Thank you!
