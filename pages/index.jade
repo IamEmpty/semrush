@@ -1,14 +1,18 @@
 doctype
 html
   head
+    meta(charset= 'utf-8')
     title Semrush Test Blog
     link(rel= 'stylesheet', type= 'text/css', href= 'https://fonts.googleapis.com/css?family=Ubuntu:400,500,700')
     link(rel= 'stylesheet', type= 'text/css', href= 'css/main.css')
   body
-    header
-      .logotype
+    header.header
+      i.header__logotype.demo-icon.icon-semrush-logo
     main
       section.latest-articles
       section.subscribe
         h3.subscribe__heading Thank you!
         p.subscribe__text You have successfully subscribed to our blog.
+    footer.footer
+      i.footer__logotype.demo-icon.icon-semrush-logo
+      p.footer__copyright © 2008-2015 SEMrush. All rights reserved.

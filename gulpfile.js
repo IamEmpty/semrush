@@ -16,6 +16,7 @@ var paths = {
   ],
   images: 'img/**/*.{png,jpg}',
   css: 'bower_components/normalize.css/normalize.css',
+  fonts: 'blocks/logotype/font/*.{eot,svg,ttf,woff}',
   build: 'build'
 };
 
@@ -36,11 +37,16 @@ gulp.task('html', function() {
     .pipe(gulp.dest(paths.build))
 });
 
-gulp.task('copy', ['copy-images', 'copy-css']);
+gulp.task('copy', ['copy-images', 'copy-css', 'copy-fonts']);
 
 gulp.task('copy-images', function() {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.build + '/img'))
+});
+
+gulp.task('copy-fonts', function() {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest(paths.build + '/fonts'))
 });
 
 gulp.task('copy-css', function() {
