@@ -14,7 +14,7 @@ var paths = {
     'blocks/**/*.less',
     'stylesheets/main.less'
   ],
-  images: 'img/**/*.{png,jpg}',
+  images: 'blocks/profile/**/*.{png,jpg}',
   css: 'bower_components/normalize.css/normalize.css',
   fonts: 'blocks/logotype/font/*.{eot,svg,ttf,woff}',
   build: 'build'

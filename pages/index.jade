@@ -7,12 +7,19 @@ html
     link(rel= 'stylesheet', type= 'text/css', href= 'css/main.css')
   body
     header.header
-      i.header__logotype.demo-icon.icon-semrush-logo
+      .container
+        i.header__logotype.demo-icon.icon-semrush-logo
     main
+      section.profile
+        .container
+          img.user-photo(src= 'img/profile-image.jpg', alt= 'User photo')
+          button.button.button_primary Follow author
       section.latest-articles
       section.subscribe
-        h3.subscribe__heading Thank you!
-        p.subscribe__text You have successfully subscribed to our blog.
+        .container
+          h3.subscribe__heading Thank you!
+          p.subscribe__text You have successfully subscribed to our blog.
     footer.footer
-      i.footer__logotype.demo-icon.icon-semrush-logo
-      p.footer__copyright © 2008-2015 SEMrush. All rights reserved.
+      .container
+        i.footer__logotype.demo-icon.icon-semrush-logo
+        p.footer__copyright © 2008-2015 SEMrush. All rights reserved.
