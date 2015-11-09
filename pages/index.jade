@@ -18,16 +18,24 @@ html
         .container
           h3.latest-articles__heading My latest articles
           .row
-            .easy-grid-1
-              .latest-articles__item.article
-                img.article__image(src= 'img/laptop.jpg', alt= 'Laptop')
-                .article__info
-                  h4.article__heading The mystery of PPC, CTR and quality score
-                  time.article__time(datetime= '2015-07-07') July 7, 2015
-                  .article__category Paid search
-                  .article__views 658
-                  .article__rating 4.1
-                  .article__share 256
+            - var article0 = { date: 'July 7, 2015', imgsrc: 'img/laptop.jpg', imgalt: 'Laptop', category: 'Paid search', heading: 'The mystery of PPC, CTR and quality score', views: 658, rating: 4.1, share: 256 };
+            - var article1 = { date: 'July 7, 2015', imgsrc: 'img/playing-cards.jpg', imgalt: 'Laptop', category: 'Content marketing', heading: 'What Hollywood taught me about content marketing', views: 658, rating: 4.1, share: 256 };
+            - var article2 = { date: 'July 5, 2015', imgsrc: 'img/workplace.jpg', imgalt: 'Laptop', category: 'Content marketing', heading: 'How to find keywords in SEMrush', views: 658, rating: 4.1, share: 256 };
+            - var article3 = { date: 'July 3, 2015', imgsrc: 'img/canyon.jpg', imgalt: 'Laptop', category: 'Paid search', heading: 'Apple launches streaming music service: will users pay?', views: 658, rating: 4.1, share: 256 };
+            - var article4 = { date: 'June 30, 2015', imgsrc: 'img/semrush-logotype.jpg', imgalt: 'Laptop', category: 'Content marketing', heading: 'What Hollywood taught me about content marketing', views: 658, rating: 4.1, share: 256 };
+            - var article5 = { date: 'June 25, 2015', imgsrc: 'img/laptop-and-newspaper.jpg', imgalt: 'Laptop', category: 'Content marketing', heading: 'ICYMI: people-oriented content, local serch tips & SEMrush domain overview', views: 658, rating: 4.1, share: 256 };
+            - var articles = [ article0, article1, article2, article3, article4, article5 ]
+            each val in articles
+              .easy-grid-1
+                .latest-articles__item.article
+                  img.article__image(src= val.imgsrc, alt= val.imgalt)
+                  .article__info
+                    time.article__time(datetime= '2015-07-07')= val.date
+                    .article__category= val.category
+                    h4.article__heading= val.heading
+                    .article__views= val.views
+                    .article__rating= val.rating
+                    .article__share= val.share
             .easy-grid-1
             .easy-grid-1
       section.subscribe
