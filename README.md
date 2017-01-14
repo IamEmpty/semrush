@@ -1,2 +1,0 @@
-# semrush
-Test blog
