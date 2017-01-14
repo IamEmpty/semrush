@@ -70,5 +70,5 @@ gulp.task('default', gulp.series(html, css, copy, watch));
 
 gulp.task('deploy', () =>
   gulp.src('./build/**/*')
-    .pipe(plugis.ghPages())
+    .pipe(plugins.ghPages())
 );
