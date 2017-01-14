@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IamEmpty/semrush.git"
+    "url": "git+https://github.com/pure-js/semrush.git"
   },
-  "author": "IamEmpty",
-  "license": "ISC",
+  "author": "pure-js",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IamEmpty/semrush/issues"
+    "url": "https://github.com/pure-js/semrush/issues"
   },
-  "homepage": "https://github.com/IamEmpty/semrush#readme",
+  "homepage": "https://github.com/pure-js/semrush#readme",
   "devDependencies": {
-    "bower": "^1.6.5",
-    "gulp": "^3.9.0",
-    "gulp-jade": "^1.1.0",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.0.1",
-    "jade": "^1.11.0",
-    "less": "^2.5.3"
+    "gulp-pug": "^3.2.0"
   }
 }

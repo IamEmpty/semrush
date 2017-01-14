@@ -3,11 +3,10 @@
   "description": "Test blog",
   "main": "README.md",
   "authors": [
-    "IamEmpty"
+    "pure-js"
   ],
-  "license": "ISC",
-  "homepage": "https://github.com/IamEmpty/semrush",
-  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/pure-js/semrush",
   "private": true,
   "ignore": [
     "**/.*",
@@ -17,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "~5.0.0"
   }
 }
