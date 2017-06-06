@@ -17,7 +17,7 @@ const paths = {
     'blocks/articles/**/*.{png,jpg}',
     'blocks/profile/**/*.{png,jpg}'
   ],
-  css: 'bower_components/normalize-css/normalize.css',
+  css: 'node_modules/normalize.css/normalize.css',
   fonts: 'blocks/logotype/font/*.{eot,svg,ttf,woff}',
   build: 'build'
 };
@@ -66,9 +66,8 @@ function watch() {
 }
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', gulp.series(html, css, copy, watch));
+exports.default = gulp.series(html, css, copy, watch);
 
-gulp.task('deploy', () =>
+const deploy = () =>
   gulp.src('./build/**/*')
-    .pipe(plugins.ghPages())
-);
+    .pipe(plugins.ghPages());

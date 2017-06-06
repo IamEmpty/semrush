@@ -4,6 +4,7 @@
   "description": "Test blog",
   "main": "README.md",
   "scripts": {
+    "start": "gulp",
     "test": "gulp build"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "gulp-less": "^3.0.3",
     "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.0.1",
-    "gulp-pug": "^3.2.0"
+    "gulp-pug": "^3.2.0",
+    "normalize.css": "^7.0.0"
   }
 }
